@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceEdu - Financial Education for Everyone</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 py-4 transition-all duration-700 navbar-transparent">
+        <div class="max-w-6xl mx-auto px-8 flex justify-between items-center">
+            <div class="flex items-center gap-2 text-2xl font-bold neon-text animate-neon-flicker">
+                <i class="fas fa-chart-line text-3xl animate-pulse-slow"></i>
+                <span class="font-mono">FinanceEdu</span>
+            </div>
+            <ul class="hidden md:flex list-none gap-8">
+                <li><a href="#home" class="nav-link font-medium active">Home</a></li>
+                <li><a href="education.html" class="nav-link font-medium">Education</a></li>
+            </ul>
+            <div class="md:hidden flex flex-col cursor-pointer gap-1 hamburger">
+                <span class="w-6 h-0.5 bg-accent transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-accent transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-accent transition-all duration-300"></span>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="md:hidden fixed left-[-100%] top-[70px] flex-col w-full text-center transition-all duration-300 py-8 nav-menu">
+            <li class="mb-4"><a href="#home" class="nav-link font-medium active">Home</a></li>
+            <li class="mb-4"><a href="education.html" class="nav-link font-medium">Education</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-30 pb-20 relative overflow-hidden grid-bg">
+        <!-- Animated particles background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="particle w-2 h-2 absolute top-1/4 left-1/4 animate-float"></div>
+            <div class="particle w-1 h-1 absolute top-1/3 right-1/4 animate-bounce-slow"></div>
+            <div class="particle w-3 h-3 absolute bottom-1/4 left-1/3 animate-float"></div>
+            <div class="particle w-1.5 h-1.5 absolute top-1/2 right-1/3 animate-bounce-slow"></div>
+            <div class="particle w-2 h-2 absolute bottom-1/3 right-1/2 animate-float"></div>
+        </div>
+        
+        <!-- Geometric shapes -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-32 h-32 border border-accent/20 rotate-45 animate-rotate-slow"></div>
+            <div class="absolute bottom-20 right-20 w-24 h-24 border-2 border-primary/30 rounded-full animate-pulse-slow"></div>
+            <div class="absolute top-1/2 left-10 w-16 h-16 bg-gradient-to-r from-secondary/20 to-accent/20 transform rotate-12 animate-bounce-slow"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up">
+                    <span class="text-white">Digital</span>
+                    <span class="neon-text block animate-neon-flicker font-mono">
+                        Financial
+                    </span> 
+                    <span class="text-white">Revolution</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 text-text-light leading-relaxed animate-fade-in-up" style="animation-delay: 0.2s;">
+                    Enter the new era of financial literacy with AI and blockchain technology. Master modern investment strategies, DeFi protocols, cryptocurrency trading, and digital asset management through our comprehensive learning ecosystem.
+                </p>
+                
+                <!-- Key Features Preview -->
+                <div class="glass p-6 rounded-xl mb-8 animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-robot text-accent"></i>
+                            <span class="text-white">AI-Powered Learning Paths</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-certificate text-primary"></i>
+                            <span class="text-white">NFT Certificates</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-users text-secondary"></i>
+                            <span class="text-white">Community Support 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <button class="cyber-button px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2" onclick="scrollToSection('education')">
+                        <i class="fas fa-rocket"></i>
+                        <span>Start Exploration</span>
+                    </button>
+                    <button class="glass border-2 border-accent text-accent hover:bg-accent hover:text-dark-bg px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 neon-glow">
+                        <i class="fas fa-play"></i>
+                        <span>Interactive Demo</span>
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="text-center glass p-4 rounded-lg">
+                        <div class="text-2xl font-bold neon-text font-mono">25,847</div>
+                        <div class="text-xs text-text-light">Active Learners</div>
+                        <div class="text-xs text-accent mt-1">+12% this month</div>
+                    </div>
+                    <div class="text-center glass p-4 rounded-lg">
+                        <div class="text-2xl font-bold neon-text font-mono">156</div>
+                        <div class="text-xs text-text-light">AI Modules</div>
+                        <div class="text-xs text-primary mt-1">6 Categories</div>
+                    </div>
+                    <div class="text-center glass p-4 rounded-lg">
+                        <div class="text-2xl font-bold neon-text font-mono">$2.4M</div>
+                        <div class="text-xs text-text-light">Portfolio Managed</div>
+                        <div class="text-xs text-secondary mt-1">AI-Optimized</div>
+                    </div>
+                    <div class="text-center glass p-4 rounded-lg">
+                        <div class="text-2xl font-bold neon-text font-mono">94.7%</div>
+                        <div class="text-xs text-text-light">Success Rate</div>
+                        <div class="text-xs text-accent mt-1">Verified Results</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center animate-fade-in-right" style="animation-delay: 0.3s;">
+                <div class="relative w-80 h-80">
+                    <!-- Central hub -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-20 h-20 glass rounded-full flex items-center justify-center neon-glow animate-pulse-slow">
+                            <i class="fas fa-brain text-3xl neon-text"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Orbiting elements -->
+                    <div class="absolute inset-0 animate-rotate-slow">
+                        <div class="relative w-full h-full">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cyber-card p-4 rounded-lg">
+                                <i class="fas fa-chart-line text-2xl text-primary"></i>
+                            </div>
+                            <div class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 cyber-card p-4 rounded-lg">
+                                <i class="fas fa-coins text-2xl text-accent"></i>
+                            </div>
+                            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 cyber-card p-4 rounded-lg">
+                                <i class="fas fa-shield-alt text-2xl text-secondary"></i>
+                            </div>
+                            <div class="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 cyber-card p-4 rounded-lg">
+                                <i class="fas fa-robot text-2xl text-neon-pink"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Connection lines -->
+                    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 320 320">
+                        <circle cx="160" cy="160" r="120" fill="none" stroke="url(#gradient1)" stroke-width="1" opacity="0.5" stroke-dasharray="5,5">
+                            <animateTransform attributeName="transform" type="rotate" values="0 160 160;360 160 160" dur="20s" repeatCount="indefinite"/>
+                        </circle>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#06ffa5;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#0ea5e9;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview Section -->
+    <section class="py-20 relative bg-gradient-to-b from-dark-bg to-dark-card">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 font-mono">
+                    Next-Generation <span class="neon-text">Financial Education</span>
+                </h2>
+                <p class="text-lg text-text-light max-w-3xl mx-auto leading-relaxed">
+                    Our platform combines artificial intelligence, blockchain technology, and real-world financial expertise to deliver personalized learning experiences that adapt to your goals and skill level.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- AI-Powered Learning -->
+                <div class="glass p-8 rounded-xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 glass rounded-full flex items-center justify-center neon-glow">
+                        <i class="fas fa-brain text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">AI-Powered Learning</h3>
+                    <p class="text-text-light text-sm mb-4">
+                        Advanced machine learning algorithms create personalized learning paths based on your progress, preferences, and financial goals.
+                    </p>
+                    <div class="space-y-2 text-xs text-text-light">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span>Adaptive curriculum</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span>Real-time feedback</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span>Progress analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blockchain Certification -->
+                <div class="glass p-8 rounded-xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 glass rounded-full flex items-center justify-center neon-glow">
+                        <i class="fas fa-certificate text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">NFT Certificates</h3>
+                    <p class="text-text-light text-sm mb-4">
+                        Earn blockchain-verified certificates as NFTs that prove your financial education achievements and can be showcased in your digital portfolio.
+                    </p>
+                    <div class="space-y-2 text-xs text-text-light">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-primary"></i>
+                            <span>Blockchain verified</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-primary"></i>
+                            <span>Tradeable assets</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-primary"></i>
+                            <span>Career portfolio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-World Application -->
+                <div class="glass p-8 rounded-xl text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 glass rounded-full flex items-center justify-center neon-glow">
+                        <i class="fas fa-chart-line text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Live Market Data</h3>
+                    <p class="text-text-light text-sm mb-4">
+                        Practice with real market data, live trading simulations, and actual DeFi protocols to gain hands-on experience in a safe environment.
+                    </p>
+                    <div class="space-y-2 text-xs text-text-light">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-secondary"></i>
+                            <span>Live market feeds</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-secondary"></i>
+                            <span>Trading simulations</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-check text-secondary"></i>
+                            <span>DeFi integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Metrics -->
+            <div class="glass p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-white text-center mb-8 font-mono">
+                    Platform <span class="neon-text">Performance</span>
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold neon-text font-mono mb-2">98.5%</div>
+                        <div class="text-sm text-text-light">Course Completion Rate</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold neon-text font-mono mb-2">4.9/5</div>
+                        <div class="text-sm text-text-light">Average Rating</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold neon-text font-mono mb-2">85%</div>
+                        <div class="text-sm text-text-light">Job Placement Rate</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold neon-text font-mono mb-2">24/7</div>
+                        <div class="text-sm text-text-light">AI Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Content Section -->
+    <section id="education" class="py-20 relative">
+        <!-- Background grid pattern -->
+        <div class="absolute inset-0 grid-bg opacity-30"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 font-mono">
+                    AI Learning <span class="neon-text">Modules</span>
+                </h2>
+                <p class="text-lg text-text-light max-w-2xl mx-auto leading-relaxed">
+                    Explore cutting-edge financial technology with adaptive learning systems powered by artificial intelligence
+                </p>
+                
+                <!-- Tech indicators -->
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <div class="glass px-4 py-2 rounded-full text-sm text-accent">
+                        <i class="fas fa-microchip mr-2"></i>AI-Powered
+                    </div>
+                    <div class="glass px-4 py-2 rounded-full text-sm text-primary">
+                        <i class="fas fa-shield-alt mr-2"></i>Blockchain Secured
+                    </div>
+                    <div class="glass px-4 py-2 rounded-full text-sm text-secondary">
+                        <i class="fas fa-chart-network mr-2"></i>Real-time Data
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Budget Optimizer -->
+                <div class="cyber-card p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow relative overflow-hidden opacity-0 translate-y-5 animate-card-fade-in education-card group" data-category="budgeting" style="animation-delay: 0.1s;">
+                    <!-- Animated border -->
+                    <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-accent via-primary to-secondary opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    
+                    <!-- Icon with glow effect -->
+                    <div class="relative z-10 w-16 h-16 glass rounded-full flex items-center justify-center mb-6 neon-glow">
+                        <i class="fas fa-brain text-2xl text-accent animate-pulse-slow"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-white mb-4 font-mono">
+                        AI Budget <span class="neon-text">Optimizer</span>
+                    </h3>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">
+                        Advanced AI system that analyzes spending patterns and provides real-time budget recommendations with high accuracy.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span>Machine Learning Analysis</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span>Predictive Budgeting</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                            <span>Smart Notifications</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                            <span>Blockchain Integration</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full cyber-button py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Activate AI</span>
+                        <i class="fas fa-rocket transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </button>
+                    
+                    <!-- Status indicator -->
+                    <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-xs">
+                        <span class="text-accent">●</span> <span class="text-text-light">BETA</span>
+                    </div>
+                </div>
+
+                <!-- DeFi Trading Bot -->
+                <div class="cyber-card p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow relative overflow-hidden opacity-0 translate-y-5 animate-card-fade-in education-card group" data-category="investment" style="animation-delay: 0.2s;">
+                    <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-primary via-secondary to-neon-purple opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 w-16 h-16 glass rounded-full flex items-center justify-center mb-6 neon-glow">
+                        <i class="fas fa-robot text-2xl text-primary animate-bounce-slow"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-white mb-4 font-mono">
+                        DeFi <span class="neon-text">Trading Bot</span>
+                    </h3>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">
+                        Automated trading bot with deep learning algorithms for profitable DeFi and cryptocurrency investments.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span>Automated DeFi Strategies</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                            <span>Risk-Adjusted Returns</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span>Multi-Chain Support</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full animate-pulse"></div>
+                            <span>Yield Farming Optimizer</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full cyber-button py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Deploy Bot</span>
+                        <i class="fas fa-cogs transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    
+                    <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-xs">
+                        <span class="text-primary">●</span> <span class="text-text-light">LIVE</span>
+                    </div>
+                </div>
+
+                <!-- Neural Wealth Manager -->
+                <div class="cyber-card p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow relative overflow-hidden opacity-0 translate-y-5 animate-card-fade-in education-card group" data-category="management" style="animation-delay: 0.3s;">
+                    <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-secondary via-accent to-neon-pink opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 w-16 h-16 glass rounded-full flex items-center justify-center mb-6 neon-glow">
+                        <i class="fas fa-network-wired text-2xl text-secondary animate-pulse-slow"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-white mb-4 font-mono">
+                        Neural <span class="neon-text">Wealth Manager</span>
+                    </h3>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">
+                        Neural network-based wealth management system that optimizes asset allocation in real-time.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                            <span>Neural Asset Allocation</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span>Smart Debt Optimization</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span>Quantum Goal Planning</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                            <span>Retirement Simulation</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full cyber-button py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Activate Neural</span>
+                        <i class="fas fa-brain transition-transform duration-300 group-hover:scale-110"></i>
+                    </button>
+                    
+                    <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-xs">
+                        <span class="text-secondary">●</span> <span class="text-text-light">AI</span>
+                    </div>
+                </div>
+
+                <!-- Quantum Financial Planner -->
+                <div class="cyber-card p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow relative overflow-hidden opacity-0 translate-y-5 animate-card-fade-in education-card group" data-category="planning" style="animation-delay: 0.4s;">
+                    <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-neon-purple via-neon-pink to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 w-16 h-16 glass rounded-full flex items-center justify-center mb-6 neon-glow">
+                        <i class="fas fa-atom text-2xl text-neon-purple animate-rotate-slow"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-white mb-4 font-mono">
+                        Quantum <span class="neon-text">Planner</span>
+                    </h3>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">
+                        Future financial planning with quantum computing simulation for unlimited probability scenarios.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full animate-pulse"></div>
+                            <span>Quantum Simulation</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                            <span>Multi-Dimensional Planning</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span>Probabilistic Outcomes</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span>Future-Proof Strategies</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full cyber-button py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Initialize Quantum</span>
+                        <i class="fas fa-atom transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    
+                    <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-xs">
+                        <span class="text-neon-purple">●</span> <span class="text-text-light">QUANTUM</span>
+                    </div>
+                </div>
+
+                <!-- Metaverse Finance Hub -->
+                <div class="cyber-card p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow relative overflow-hidden opacity-0 translate-y-5 animate-card-fade-in education-card group" data-category="digital" style="animation-delay: 0.5s;">
+                    <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-neon-blue via-primary to-secondary opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 w-16 h-16 glass rounded-full flex items-center justify-center mb-6 neon-glow">
+                        <i class="fas fa-vr-cardboard text-2xl text-neon-blue animate-bounce-slow"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-white mb-4 font-mono">
+                        Metaverse <span class="neon-text">Finance</span>
+                    </h3>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">
+                        Explore the future digital economy with NFTs, virtual real estate, and Web3 financial instruments.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse"></div>
+                            <span>NFT Portfolio Management</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span>Virtual Real Estate</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                            <span>Web3 DeFi Protocols</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span>Metaverse Banking</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full cyber-button py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Enter Metaverse</span>
+                        <i class="fas fa-portal-enter transition-transform duration-300 group-hover:scale-110"></i>
+                    </button>
+                    
+                    <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-xs">
+                        <span class="text-neon-blue">●</span> <span class="text-text-light">WEB3</span>
+                    </div>
+                </div>
+
+                <!-- Autonomous Business AI -->
+                <div class="cyber-card p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow relative overflow-hidden opacity-0 translate-y-5 animate-card-fade-in education-card group" data-category="business" style="animation-delay: 0.6s;">
+                    <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-accent via-neon-pink to-neon-purple opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 w-16 h-16 glass rounded-full flex items-center justify-center mb-6 neon-glow">
+                        <i class="fas fa-industry text-2xl text-accent animate-pulse-slow"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-white mb-4 font-mono">
+                        Autonomous <span class="neon-text">Business AI</span>
+                    </h3>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">
+                        Autonomous AI system that manages all aspects of business finance with machine learning and predictive analytics.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span>Autonomous Cash Flow</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                            <span>Predictive Analytics</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-neon-purple rounded-full animate-pulse"></div>
+                            <span>Smart Investments</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-text-light">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span>Real-time Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full cyber-button py-4 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Launch AI System</span>
+                        <i class="fas fa-rocket transition-transform duration-300 group-hover:translate-y-[-2px]"></i>
+                    </button>
+                    
+                    <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-xs">
+                        <span class="text-accent">●</span> <span class="text-text-light">AUTO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 relative">
+        <div class="absolute inset-0 grid-bg opacity-20"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 font-mono">
+                Why Choose <span class="neon-text">FinanceEdu</span>?
+            </h2>
+            <p class="text-text-light mb-8 max-w-3xl mx-auto leading-relaxed">
+                Experience the convergence of artificial intelligence, blockchain technology, and financial expertise in our comprehensive learning ecosystem designed for the digital economy.
+            </p>
+            
+            <!-- Key Benefits -->
+            <div class="glass p-6 rounded-xl mb-16 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold neon-text font-mono mb-2">15+ Years</div>
+                        <div class="text-text-light">Combined Industry Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold neon-text font-mono mb-2">50+ Partners</div>
+                        <div class="text-text-light">Financial Institutions & DeFi Protocols</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold neon-text font-mono mb-2">ISO 27001</div>
+                        <div class="text-text-light">Security Certified Platform</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow feature-item group">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mx-auto mb-6 neon-glow group-hover:animate-bounce-slow">
+                        <i class="fas fa-microchip text-3xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4 font-mono">AI-Powered Learning</h3>
+                    <p class="text-text-light leading-relaxed mb-4">Adaptive learning system that adjusts to individual learning styles using machine learning algorithms</p>
+                    <div class="space-y-1 text-xs text-text-light">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span>Personalized curriculum</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span>Progress prediction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow feature-item group">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mx-auto mb-6 neon-glow group-hover:animate-bounce-slow">
+                        <i class="fas fa-shield-alt text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4 font-mono">Blockchain Security</h3>
+                    <p class="text-text-light leading-relaxed mb-4">Enterprise-level security with blockchain technology to protect your data and transactions</p>
+                    <div class="space-y-1 text-xs text-text-light">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-primary"></i>
+                            <span>End-to-end encryption</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-primary"></i>
+                            <span>Immutable records</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow feature-item group">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mx-auto mb-6 neon-glow group-hover:animate-bounce-slow">
+                        <i class="fas fa-certificate text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4 font-mono">NFT Certificates</h3>
+                    <p class="text-text-light leading-relaxed mb-4">Digital certificates in NFT form that can be verified and traded on marketplace</p>
+                    <div class="space-y-1 text-xs text-text-light">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-secondary"></i>
+                            <span>Blockchain verified</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-secondary"></i>
+                            <span>Tradeable assets</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass p-8 rounded-xl transition-all duration-500 hover:-translate-y-4 hover:neon-glow feature-item group">
+                    <div class="w-20 h-20 glass rounded-full flex items-center justify-center mx-auto mb-6 neon-glow group-hover:animate-bounce-slow">
+                        <i class="fas fa-infinity text-3xl text-neon-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4 font-mono">24/7 AI Assistant</h3>
+                    <p class="text-text-light leading-relaxed mb-4">AI assistant available 24/7 to answer questions and provide personal financial advice</p>
+                    <div class="space-y-1 text-xs text-text-light">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-neon-pink"></i>
+                            <span>Instant responses</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-neon-pink"></i>
+                            <span>Multi-language support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative py-12 overflow-hidden">
+        <div class="absolute inset-0 glass"></div>
+        <div class="absolute inset-0 grid-bg opacity-10"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 text-2xl font-bold neon-text mb-4 font-mono animate-neon-flicker">
+                        <i class="fas fa-chart-line animate-pulse-slow"></i>
+                        <span>FinanceEdu</span>
+                    </div>
+                    <p class="text-text-light leading-relaxed mb-4">Future financial platform with AI, blockchain, and metaverse technology for digital financial literacy revolution.</p>
+                    
+                    <!-- Tech badges -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="glass px-2 py-1 rounded text-xs text-accent">AI</span>
+                        <span class="glass px-2 py-1 rounded text-xs text-primary">BLOCKCHAIN</span>
+                        <span class="glass px-2 py-1 rounded text-xs text-secondary">WEB3</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 neon-text font-mono">AI Modules</h4>
+                    <ul class="list-none space-y-2">
+                        <li><a href="#budgeting" class="text-text-light hover:text-accent transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent rounded-full"></span>AI Budget Optimizer</a></li>
+                        <li><a href="#investment" class="text-text-light hover:text-primary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-primary rounded-full"></span>DeFi Trading Bot</a></li>
+                        <li><a href="#management" class="text-text-light hover:text-secondary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-secondary rounded-full"></span>Neural Wealth Manager</a></li>
+                        <li><a href="#planning" class="text-text-light hover:text-neon-purple transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-neon-purple rounded-full"></span>Quantum Planner</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 neon-text font-mono">Network</h4>
+                    <ul class="list-none space-y-2">
+                        <li><a href="#about" class="text-text-light hover:text-accent transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent rounded-full"></span>Neural Network</a></li>
+                        <li><a href="#team" class="text-text-light hover:text-primary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-primary rounded-full"></span>AI Team</a></li>
+                        <li><a href="#contact" class="text-text-light hover:text-secondary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-secondary rounded-full"></span>Quantum Contact</a></li>
+                        <li><a href="#privacy" class="text-text-light hover:text-neon-pink transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-neon-pink rounded-full"></span>Privacy Protocol</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 neon-text font-mono">Connect</h4>
+                    <div class="flex gap-4 mb-6">
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-accent hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-discord group-hover:animate-bounce-slow"></i></a>
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-primary hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-twitter group-hover:animate-bounce-slow"></i></a>
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-secondary hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-github group-hover:animate-bounce-slow"></i></a>
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-neon-pink hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-telegram group-hover:animate-bounce-slow"></i></a>
+                    </div>
+                    
+                    <!-- Status indicator -->
+                    <div class="glass p-3 rounded-lg">
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span class="text-text-light">System Status: </span>
+                            <span class="text-accent font-mono">ONLINE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-white/10">
+                <p class="text-text-light font-mono">
+                    <span class="text-accent">©</span> 2024 FinanceEdu | 
+                    <span class="neon-text">Powered by AI & Blockchain</span> | 
+                    <span class="text-primary">Built for the Future</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

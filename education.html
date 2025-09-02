@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Materials - FinanceEdu</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 py-4 transition-all duration-700 navbar-transparent">
+        <div class="max-w-6xl mx-auto px-8 flex justify-between items-center">
+            <div class="flex items-center gap-2 text-2xl font-bold neon-text animate-neon-flicker">
+                <i class="fas fa-chart-line text-3xl animate-pulse-slow"></i>
+                <span class="font-mono">FinanceEdu</span>
+            </div>
+            <ul class="hidden md:flex list-none gap-8">
+                <li><a href="index.html" class="nav-link font-medium">Home</a></li>
+                <li><a href="education.html" class="nav-link font-medium active">Education</a></li>
+            </ul>
+            <div class="md:hidden flex flex-col cursor-pointer gap-1 hamburger">
+                <span class="w-6 h-0.5 bg-accent transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-accent transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-accent transition-all duration-300"></span>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="md:hidden fixed left-[-100%] top-[70px] flex-col w-full text-center transition-all duration-300 py-8 nav-menu">
+            <li class="mb-4"><a href="index.html" class="nav-link font-medium">Home</a></li>
+            <li class="mb-4"><a href="education.html" class="nav-link font-medium active">Education</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-30 pb-12 relative overflow-hidden grid-bg">
+        <!-- Animated particles background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="particle w-1 h-1 absolute top-1/4 left-1/5 animate-float"></div>
+            <div class="particle w-2 h-2 absolute top-1/3 right-1/4 animate-bounce-slow"></div>
+            <div class="particle w-1.5 h-1.5 absolute bottom-1/4 left-1/2 animate-float"></div>
+            <div class="particle w-1 h-1 absolute top-1/2 right-1/5 animate-bounce-slow"></div>
+        </div>
+        
+        <!-- Neural network connections -->
+        <div class="absolute inset-0">
+            <svg class="w-full h-full opacity-20" viewBox="0 0 800 400">
+                <defs>
+                    <linearGradient id="neuralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#06ffa5;stop-opacity:0.8" />
+                        <stop offset="50%" style="stop-color:#0ea5e9;stop-opacity:0.6" />
+                        <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.4" />
+                    </linearGradient>
+                </defs>
+                <path d="M100,100 Q400,50 700,100" stroke="url(#neuralGrad)" stroke-width="2" fill="none" opacity="0.6">
+                    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+                </path>
+                <path d="M100,200 Q400,150 700,200" stroke="url(#neuralGrad)" stroke-width="2" fill="none" opacity="0.4">
+                    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/>
+                </path>
+                <path d="M100,300 Q400,250 700,300" stroke="url(#neuralGrad)" stroke-width="2" fill="none" opacity="0.5">
+                    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="5s" repeatCount="indefinite"/>
+                </path>
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-8 text-center relative z-10">
+            <div class="mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 font-mono">
+                    <span class="text-white">Neural</span>
+                    <span class="neon-text block animate-neon-flicker">Learning Hub</span>
+                    <span class="text-white">AI Education</span>
+                </h1>
+                <p class="text-xl text-text-light max-w-3xl mx-auto leading-relaxed mb-8">
+                    Enter an adaptive AI learning ecosystem with neural network technology for personalized future financial curriculum
+                </p>
+                
+                <!-- AI Status Indicators -->
+                <div class="flex justify-center items-center gap-6 mb-8">
+                    <div class="glass px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                        <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                        <span class="text-accent">Neural Network Active</span>
+                    </div>
+                    <div class="glass px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                        <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                        <span class="text-primary">AI Tutor Online</span>
+                    </div>
+                    <div class="glass px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                        <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                        <span class="text-secondary">Quantum Processing</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progress Overview with AI Theme -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="cyber-card p-6 rounded-xl group hover:neon-glow transition-all duration-500">
+                    <div class="flex items-center justify-center gap-3 mb-3">
+                        <i class="fas fa-brain text-2xl text-accent animate-pulse-slow"></i>
+                        <div class="text-3xl font-bold neon-text font-mono">6</div>
+                    </div>
+                    <div class="text-sm text-text-light">AI Learning Modules</div>
+                    <div class="mt-2 text-xs text-accent">Neural Networks Ready</div>
+                </div>
+                
+                <div class="cyber-card p-6 rounded-xl group hover:neon-glow transition-all duration-500">
+                    <div class="flex items-center justify-center gap-3 mb-3">
+                        <i class="fas fa-microchip text-2xl text-primary animate-bounce-slow"></i>
+                        <div class="text-3xl font-bold text-primary font-mono">24</div>
+                    </div>
+                    <div class="text-sm text-text-light">Quantum Algorithms</div>
+                    <div class="mt-2 text-xs text-primary">Processing Units</div>
+                </div>
+                
+                <div class="cyber-card p-6 rounded-xl group hover:neon-glow transition-all duration-500">
+                    <div class="flex items-center justify-center gap-3 mb-3">
+                        <i class="fas fa-chart-network text-2xl text-secondary animate-rotate-slow"></i>
+                        <div class="text-3xl font-bold text-secondary font-mono">0%</div>
+                    </div>
+                    <div class="text-sm text-text-light">Neural Sync Progress</div>
+                    <div class="mt-2 text-xs text-secondary">Ready to Initialize</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="py-16 relative">
+        <div class="absolute inset-0 grid-bg opacity-10"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-mono">
+                    <span class="neon-text">Neural</span> Learning Path
+                </h2>
+                <p class="text-lg text-text-light max-w-2xl mx-auto">
+                    Adaptive AI learning path with machine learning algorithms for personal optimization
+                </p>
+                
+                <!-- Neural Path Visualization -->
+                <div class="mt-8 flex justify-center">
+                    <div class="glass px-6 py-3 rounded-full flex items-center gap-3">
+                        <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                        <span class="text-accent font-mono text-sm">ADAPTIVE LEARNING ACTIVE</span>
+                        <div class="w-3 h-3 bg-primary rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Neural Learning Path Steps -->
+            <div class="relative">
+                <!-- Neural Connection Visualization -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full hidden md:block">
+                    <div class="w-full h-full bg-gradient-to-b from-accent via-primary to-secondary opacity-60 animate-pulse"></div>
+                </div>
+                
+                <!-- Floating data points -->
+                <div class="absolute inset-0 hidden lg:block">
+                    <div class="w-2 h-2 bg-accent rounded-full absolute top-20 left-1/4 animate-float opacity-60"></div>
+                    <div class="w-1 h-1 bg-primary rounded-full absolute top-40 right-1/4 animate-bounce-slow opacity-40"></div>
+                    <div class="w-1.5 h-1.5 bg-secondary rounded-full absolute bottom-40 left-1/3 animate-float opacity-50"></div>
+                </div>
+                
+                <div class="space-y-16">
+                    <!-- Neural Node 1: AI Budget System -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2 md:pr-8 text-center md:text-right">
+                            <div class="cyber-card p-6 rounded-xl border-l-4 border-accent hover:neon-glow transition-all duration-500 group">
+                                <div class="flex items-center justify-center md:justify-end gap-3 mb-4">
+                                    <h3 class="text-xl font-semibold text-white font-mono">Neural Node 1: AI Budget System</h3>
+                                    <div class="w-12 h-12 glass rounded-full flex items-center justify-center text-accent font-bold neon-glow">
+                                        <span class="font-mono">01</span>
+                                    </div>
+                                </div>
+                                <p class="text-text-light mb-4">AI system that analyzes spending patterns and optimizes budget allocation in real-time</p>
+                                <div class="flex flex-wrap gap-2 justify-center md:justify-end">
+                                    <span class="glass px-3 py-1 text-accent text-sm rounded-full border border-accent/30">ML Analysis</span>
+                                    <span class="glass px-3 py-1 text-accent text-sm rounded-full border border-accent/30">Auto-Optimization</span>
+                                </div>
+                                <div class="mt-3 text-xs text-accent font-mono">STATUS: NEURAL NETWORK READY</div>
+                            </div>
+                        </div>
+                        <div class="w-20 h-20 glass rounded-full flex items-center justify-center text-accent text-3xl neon-glow z-10 group hover:animate-pulse-slow">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+
+                    <!-- Neural Node 2: Quantum Savings -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2 md:pr-8"></div>
+                        <div class="w-20 h-20 glass rounded-full flex items-center justify-center text-primary text-3xl neon-glow z-10 group hover:animate-bounce-slow">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 text-center md:text-left">
+                            <div class="cyber-card p-6 rounded-xl border-r-4 border-primary hover:neon-glow transition-all duration-500 group">
+                                <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                                    <div class="w-12 h-12 glass rounded-full flex items-center justify-center text-primary font-bold neon-glow">
+                                        <span class="font-mono">02</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-white font-mono">Neural Node 2: Quantum Savings</h3>
+                                </div>
+                                <p class="text-text-light mb-4">Quantum computing algorithms for saving strategy optimization with future scenario simulation</p>
+                                <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                                    <span class="glass px-3 py-1 text-primary text-sm rounded-full border border-primary/30">Quantum Simulation</span>
+                                    <span class="glass px-3 py-1 text-primary text-sm rounded-full border border-primary/30">Future Modeling</span>
+                                </div>
+                                <div class="mt-3 text-xs text-primary font-mono">STATUS: QUANTUM PROCESSOR ACTIVE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Neural Node 3: DeFi Investment AI -->
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2 md:pr-8 text-center md:text-right">
+                            <div class="cyber-card p-6 rounded-xl border-l-4 border-secondary hover:neon-glow transition-all duration-500 group">
+                                <div class="flex items-center justify-center md:justify-end gap-3 mb-4">
+                                    <h3 class="text-xl font-semibold text-white font-mono">Neural Node 3: DeFi Investment AI</h3>
+                                    <div class="w-12 h-12 glass rounded-full flex items-center justify-center text-secondary font-bold neon-glow">
+                                        <span class="font-mono">03</span>
+                                    </div>
+                                </div>
+                                <p class="text-text-light mb-4">AI trading bot with deep learning for automatic DeFi investment and smart portfolio management</p>
+                                <div class="flex flex-wrap gap-2 justify-center md:justify-end">
+                                    <span class="glass px-3 py-1 text-secondary text-sm rounded-full border border-secondary/30">Deep Learning</span>
+                                    <span class="glass px-3 py-1 text-secondary text-sm rounded-full border border-secondary/30">Auto Trading</span>
+                                </div>
+                                <div class="mt-3 text-xs text-secondary font-mono">STATUS: AI TRADING BOT DEPLOYED</div>
+                            </div>
+                        </div>
+                        <div class="w-20 h-20 glass rounded-full flex items-center justify-center text-secondary text-3xl neon-glow z-10 group hover:animate-rotate-slow">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Learning Modules -->
+    <section class="py-16 relative">
+        <div class="absolute inset-0 grid-bg opacity-5"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-mono">
+                    AI Learning <span class="neon-text">Modules</span>
+                </h2>
+                <p class="text-lg text-text-light max-w-2xl mx-auto">
+                    Choose the AI modules you want to activate and start synchronizing your neural network
+                </p>
+                
+                <!-- Module Status -->
+                <div class="mt-8 flex justify-center items-center gap-4 flex-wrap">
+                    <div class="glass px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                        <i class="fas fa-microchip text-accent"></i>
+                        <span class="text-accent">6 AI Modules Available</span>
+                    </div>
+                    <div class="glass px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                        <i class="fas fa-network-wired text-primary"></i>
+                        <span class="text-primary">Neural Networks Ready</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Budget Optimizer Module -->
+                <div class="cyber-card rounded-xl overflow-hidden hover:neon-glow transition-all duration-500 hover:-translate-y-4 group relative">
+                    <!-- Animated header with particles -->
+                    <div class="h-48 relative overflow-hidden bg-gradient-to-br from-accent/20 to-primary/20">
+                        <div class="absolute inset-0 grid-bg opacity-30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <i class="fas fa-brain text-6xl text-accent opacity-90 animate-pulse-slow"></i>
+                                <div class="absolute -top-2 -right-2 w-4 h-4 bg-accent rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 glass rounded-full px-3 py-1 text-accent text-sm font-mono">
+                            4 Neural Layers
+                        </div>
+                        <div class="absolute bottom-4 left-4 glass rounded-full px-3 py-1 text-xs">
+                            <span class="text-accent">●</span> <span class="text-text-light">AI READY</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3 font-mono">AI Budget <span class="neon-text">Optimizer</span></h3>
+                        <p class="text-text-light mb-4 leading-relaxed">
+                            Advanced AI system that analyzes spending patterns and provides real-time budget recommendations with high accuracy.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-microchip text-accent"></i>
+                                <span>Neural Processing: 2-3 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-chart-network text-accent"></i>
+                                <span>Complexity: Adaptive AI</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Machine Learning Analysis</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Predictive Budgeting</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Smart Emergency Fund</span>
+                            </div>
+                        </div>
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick="startLearning('budgeting')">
+                            <span>Initialize AI</span>
+                            <i class="fas fa-rocket transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- DeFi Trading Bot Module -->
+                <div class="cyber-card rounded-xl overflow-hidden hover:neon-glow transition-all duration-500 hover:-translate-y-4 group relative">
+                    <div class="h-48 relative overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
+                        <div class="absolute inset-0 grid-bg opacity-30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <i class="fas fa-robot text-6xl text-primary opacity-90 animate-bounce-slow"></i>
+                                <div class="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 glass rounded-full px-3 py-1 text-primary text-sm font-mono">
+                            6 DeFi Protocols
+                        </div>
+                        <div class="absolute bottom-4 left-4 glass rounded-full px-3 py-1 text-xs">
+                            <span class="text-primary">●</span> <span class="text-text-light">BOT ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3 font-mono">DeFi Trading <span class="text-primary">Bot</span></h3>
+                        <p class="text-text-light mb-4 leading-relaxed">
+                            Automated trading bot with deep learning algorithms for profitable DeFi and cryptocurrency investments.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-cogs text-primary"></i>
+                                <span>Auto Trading: 24/7</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-shield-alt text-primary"></i>
+                                <span>Risk Level: AI Managed</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Automated DeFi Strategies</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Multi-Chain Support</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Yield Farming Optimizer</span>
+                            </div>
+                        </div>
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick="startLearning('investment')">
+                            <span>Deploy Bot</span>
+                            <i class="fas fa-cogs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Neural Wealth Manager Module -->
+                <div class="cyber-card rounded-xl overflow-hidden hover:neon-glow transition-all duration-500 hover:-translate-y-4 group relative">
+                    <div class="h-48 relative overflow-hidden bg-gradient-to-br from-secondary/20 to-accent/20">
+                        <div class="absolute inset-0 grid-bg opacity-30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <i class="fas fa-network-wired text-6xl text-secondary opacity-90 animate-pulse-slow"></i>
+                                <div class="absolute top-0 right-0 w-3 h-3 bg-secondary rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 glass rounded-full px-3 py-1 text-secondary text-sm font-mono">
+                            5 Neural Nodes
+                        </div>
+                        <div class="absolute bottom-4 left-4 glass rounded-full px-3 py-1 text-xs">
+                            <span class="text-secondary">●</span> <span class="text-text-light">NEURAL</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3 font-mono">Neural <span class="text-secondary">Wealth Manager</span></h3>
+                        <p class="text-text-light mb-4 leading-relaxed">
+                            Neural network-based wealth management system that optimizes asset allocation in real-time.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-brain text-secondary"></i>
+                                <span>Neural Training: 3-4 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-atom text-secondary"></i>
+                                <span>Intelligence: Quantum AI</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Neural Asset Allocation</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Smart Debt Optimization</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Quantum Goal Planning</span>
+                            </div>
+                        </div>
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick="startLearning('management')">
+                            <span>Activate Neural</span>
+                            <i class="fas fa-brain transition-transform duration-300 group-hover:scale-110"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quantum Financial Planner Module -->
+                <div class="cyber-card rounded-xl overflow-hidden hover:neon-glow transition-all duration-500 hover:-translate-y-4 group relative">
+                    <div class="h-48 relative overflow-hidden bg-gradient-to-br from-neon-purple/20 to-neon-pink/20">
+                        <div class="absolute inset-0 grid-bg opacity-30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <i class="fas fa-atom text-6xl text-neon-purple opacity-90 animate-rotate-slow"></i>
+                                <div class="absolute -top-1 -left-1 w-3 h-3 bg-neon-purple rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 glass rounded-full px-3 py-1 text-neon-purple text-sm font-mono">
+                            4 Quantum States
+                        </div>
+                        <div class="absolute bottom-4 left-4 glass rounded-full px-3 py-1 text-xs">
+                            <span class="text-neon-purple">●</span> <span class="text-text-light">QUANTUM</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3 font-mono">Quantum <span class="text-neon-purple">Planner</span></h3>
+                        <p class="text-text-light mb-4 leading-relaxed">
+                            Future financial planning with quantum computing simulation for unlimited probability scenarios.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-atom text-neon-purple"></i>
+                                <span>Quantum Sim: 3-4 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-infinity text-neon-purple"></i>
+                                <span>Probability: Infinite</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-purple rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Quantum Simulation</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-purple rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Multi-Dimensional Planning</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-purple rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Future-Proof Strategies</span>
+                            </div>
+                        </div>
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick="startLearning('planning')">
+                            <span>Initialize Quantum</span>
+                            <i class="fas fa-atom transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Metaverse Finance Hub Module -->
+                <div class="cyber-card rounded-xl overflow-hidden hover:neon-glow transition-all duration-500 hover:-translate-y-4 group relative">
+                    <div class="h-48 relative overflow-hidden bg-gradient-to-br from-neon-blue/20 to-primary/20">
+                        <div class="absolute inset-0 grid-bg opacity-30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <i class="fas fa-vr-cardboard text-6xl text-neon-blue opacity-90 animate-bounce-slow"></i>
+                                <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-neon-blue rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 glass rounded-full px-3 py-1 text-neon-blue text-sm font-mono">
+                            4 Web3 Layers
+                        </div>
+                        <div class="absolute bottom-4 left-4 glass rounded-full px-3 py-1 text-xs">
+                            <span class="text-neon-blue">●</span> <span class="text-text-light">WEB3</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3 font-mono">Metaverse <span class="text-neon-blue">Finance</span></h3>
+                        <p class="text-text-light mb-4 leading-relaxed">
+                            Explore the future digital economy with NFTs, virtual real estate, and Web3 financial instruments.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-cube text-neon-blue"></i>
+                                <span>VR Training: 2-3 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-globe text-neon-blue"></i>
+                                <span>Dimension: Web3 Native</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">NFT Portfolio Management</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Virtual Real Estate</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Metaverse Banking</span>
+                            </div>
+                        </div>
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick="startLearning('digital')">
+                            <span>Enter Metaverse</span>
+                            <i class="fas fa-portal-enter transition-transform duration-300 group-hover:scale-110"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Autonomous Business AI Module -->
+                <div class="cyber-card rounded-xl overflow-hidden hover:neon-glow transition-all duration-500 hover:-translate-y-4 group relative">
+                    <div class="h-48 relative overflow-hidden bg-gradient-to-br from-neon-pink/20 to-accent/20">
+                        <div class="absolute inset-0 grid-bg opacity-30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <i class="fas fa-industry text-6xl text-neon-pink opacity-90 animate-pulse-slow"></i>
+                                <div class="absolute -top-2 -right-2 w-4 h-4 bg-neon-pink rounded-full animate-ping"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 glass rounded-full px-3 py-1 text-neon-pink text-sm font-mono">
+                            4 AI Systems
+                        </div>
+                        <div class="absolute bottom-4 left-4 glass rounded-full px-3 py-1 text-xs">
+                            <span class="text-neon-pink">●</span> <span class="text-text-light">AUTO</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3 font-mono">Autonomous <span class="text-neon-pink">Business AI</span></h3>
+                        <p class="text-text-light mb-4 leading-relaxed">
+                            Autonomous AI system that manages all aspects of business finance with machine learning and predictive analytics.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-robot text-neon-pink"></i>
+                                <span>Auto System: 24/7</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <i class="fas fa-chart-line text-neon-pink"></i>
+                                <span>Intelligence: Enterprise AI</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Autonomous Cash Flow</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Predictive Analytics</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-neon-pink rounded-full animate-pulse"></div>
+                                <span class="text-sm text-text-light">Real-time Optimization</span>
+                            </div>
+                        </div>
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick="startLearning('business')">
+                            <span>Launch AI System</span>
+                            <i class="fas fa-rocket transition-transform duration-300 group-hover:translate-y-[-2px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Tools Section -->
+    <section class="py-16 relative">
+        <div class="absolute inset-0 grid-bg opacity-10"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-mono">
+                    Quantum <span class="neon-text">Calculators</span>
+                </h2>
+                <p class="text-lg text-text-light max-w-2xl mx-auto">
+                    Use quantum AI calculators for high-accuracy financial simulation and future predictions
+                </p>
+                
+                <!-- Quantum Status -->
+                <div class="mt-8 flex justify-center">
+                    <div class="glass px-6 py-3 rounded-full flex items-center gap-3">
+                        <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                        <span class="text-accent font-mono text-sm">QUANTUM PROCESSORS ONLINE</span>
+                        <div class="w-3 h-3 bg-primary rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Budget Quantum Calculator -->
+                <div class="cyber-card rounded-xl p-6 hover:neon-glow transition-all duration-500 group relative overflow-hidden">
+                    <!-- Animated background -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 glass rounded-full flex items-center justify-center neon-glow">
+                                <i class="fas fa-brain text-xl text-accent animate-pulse-slow"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white font-mono">AI Budget Quantum</h3>
+                        </div>
+                        <p class="mb-6 text-text-light">Budget simulation with quantum algorithms and machine learning for maximum optimization</p>
+                        
+                        <!-- Features -->
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                                <span>Quantum Optimization</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                                <span>AI Predictions</span>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick=\"openCalculator('budget')\">
+                            <span>Initialize Quantum</span>
+                            <i class="fas fa-atom transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Status indicator -->
+                    <div class="absolute top-4 right-4 glass px-2 py-1 rounded text-xs">
+                        <span class="text-accent">●</span> <span class="text-text-light">QUANTUM</span>
+                    </div>
+                </div>
+
+                <!-- DeFi Investment Simulator -->
+                <div class="cyber-card rounded-xl p-6 hover:neon-glow transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 glass rounded-full flex items-center justify-center neon-glow">
+                                <i class="fas fa-robot text-xl text-primary animate-bounce-slow"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white font-mono">DeFi Investment Sim</h3>
+                        </div>
+                        <p class="mb-6 text-text-light">DeFi investment simulation with AI trading bot and real-time risk analysis</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                <span>Multi-Chain Analysis</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                <span>Yield Optimization</span>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick=\"openCalculator('investment')\">
+                            <span>Deploy Simulator</span>
+                            <i class="fas fa-cogs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="absolute top-4 right-4 glass px-2 py-1 rounded text-xs">
+                        <span class="text-primary">●</span> <span class="text-text-light">DEFI</span>
+                    </div>
+                </div>
+
+                <!-- Neural Emergency Fund -->
+                <div class="cyber-card rounded-xl p-6 hover:neon-glow transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-neon-pink/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 glass rounded-full flex items-center justify-center neon-glow">
+                                <i class="fas fa-shield-alt text-xl text-secondary animate-pulse-slow"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white font-mono">Neural Emergency AI</h3>
+                        </div>
+                        <p class="mb-6 text-text-light">Emergency fund calculator with neural network for risk prediction and financial security optimization</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                                <span>Risk Prediction</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-text-light">
+                                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                                <span>Neural Analysis</span>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full cyber-button py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group" onclick=\"openCalculator('emergency')\">
+                            <span>Activate Neural</span>
+                            <i class="fas fa-brain transition-transform duration-300 group-hover:scale-110"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="absolute top-4 right-4 glass px-2 py-1 rounded text-xs">
+                        <span class="text-secondary">●</span> <span class="text-text-light">NEURAL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neural Progress Tracking -->
+    <section class="py-16 relative">
+        <div class="absolute inset-0 grid-bg opacity-5"></div>
+        
+        <div class="max-w-4xl mx-auto px-8 relative z-10">
+            <div class="cyber-card rounded-xl p-8 hover:neon-glow transition-all duration-500">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-white mb-4 font-mono">
+                        Neural <span class="neon-text">Progress Sync</span>
+                    </h2>
+                    <p class="text-text-light">Monitor your neural network synchronization and get NFT certificates after completing each AI module</p>
+                    
+                    <!-- Sync Status -->
+                    <div class="mt-6 flex justify-center">
+                        <div class="glass px-4 py-2 rounded-full flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span class="text-accent font-mono text-sm">NEURAL SYNC MONITORING</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Overall Neural Progress -->
+                    <div class="cyber-card rounded-lg p-6 relative overflow-hidden group">
+                        <!-- Animated background -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-accent/10 via-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-brain text-2xl text-accent animate-pulse-slow"></i>
+                                    <h3 class="text-xl font-semibold text-white font-mono">Neural Sync Progress</h3>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-3xl font-bold neon-text font-mono">0%</span>
+                                    <div class="text-xs text-text-light">Initialization Phase</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Neural progress bar -->
+                            <div class="w-full glass rounded-full h-4 overflow-hidden">
+                                <div class="h-4 rounded-full bg-gradient-to-r from-accent via-primary to-secondary transition-all duration-1000 relative" style="width: 0%">
+                                    <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-sm text-text-light font-mono">0 of 6 AI Modules Synchronized</p>
+                            
+                            <!-- Neural network visualization -->
+                            <div class="mt-4 flex justify-center">
+                                <svg width="200" height="40" viewBox="0 0 200 40">
+                                    <defs>
+                                        <linearGradient id="neuralGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#06ffa5;stop-opacity:0.8" />
+                                            <stop offset="50%" style="stop-color:#0ea5e9;stop-opacity:0.6" />
+                                            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M10,20 Q50,10 100,20 Q150,30 190,20" stroke="url(#neuralGrad2)" stroke-width="2" fill="none" opacity="0.6">
+                                        <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+                                    </path>
+                                    <circle cx="20" cy="20" r="3" fill="#06ffa5" opacity="0.8">
+                                        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="100" cy="20" r="3" fill="#0ea5e9" opacity="0.6">
+                                        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="180" cy="20" r="3" fill="#8b5cf6" opacity="0.7">
+                                        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+                                    </circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Module Progress Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- AI Budget Module -->
+                        <div class="cyber-card rounded-lg p-4 hover:neon-glow transition-all duration-300 group">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-brain text-accent animate-pulse-slow"></i>
+                                <span class="font-medium text-white font-mono">AI Budget Optimizer</span>
+                                <span class="ml-auto text-sm text-text-light font-mono">0/4</span>
+                            </div>
+                            <div class="w-full glass rounded-full h-3 overflow-hidden">
+                                <div class="bg-gradient-to-r from-accent to-accent/60 h-3 rounded-full transition-all duration-500" style="width: 0%">
+                                    <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-xs text-accent font-mono">STATUS: AWAITING INITIALIZATION</div>
+                        </div>
+
+                        <!-- DeFi Trading Bot -->
+                        <div class="cyber-card rounded-lg p-4 hover:neon-glow transition-all duration-300 group">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-robot text-primary animate-bounce-slow"></i>
+                                <span class="font-medium text-white font-mono">DeFi Trading Bot</span>
+                                <span class="ml-auto text-sm text-text-light font-mono">0/6</span>
+                            </div>
+                            <div class="w-full glass rounded-full h-3 overflow-hidden">
+                                <div class="bg-gradient-to-r from-primary to-primary/60 h-3 rounded-full transition-all duration-500" style="width: 0%">
+                                    <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-xs text-primary font-mono">STATUS: BOT OFFLINE</div>
+                        </div>
+
+                        <!-- Neural Wealth Manager -->
+                        <div class="cyber-card rounded-lg p-4 hover:neon-glow transition-all duration-300 group">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-network-wired text-secondary animate-pulse-slow"></i>
+                                <span class="font-medium text-white font-mono">Neural Wealth Manager</span>
+                                <span class="ml-auto text-sm text-text-light font-mono">0/5</span>
+                            </div>
+                            <div class="w-full glass rounded-full h-3 overflow-hidden">
+                                <div class="bg-gradient-to-r from-secondary to-secondary/60 h-3 rounded-full transition-all duration-500" style="width: 0%">
+                                    <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-xs text-secondary font-mono">STATUS: NEURAL NETWORK STANDBY</div>
+                        </div>
+
+                        <!-- Quantum Planner -->
+                        <div class="cyber-card rounded-lg p-4 hover:neon-glow transition-all duration-300 group">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-atom text-neon-purple animate-rotate-slow"></i>
+                                <span class="font-medium text-white font-mono">Quantum Planner</span>
+                                <span class="ml-auto text-sm text-text-light font-mono">0/4</span>
+                            </div>
+                            <div class="w-full glass rounded-full h-3 overflow-hidden">
+                                <div class="bg-gradient-to-r from-neon-purple to-neon-purple/60 h-3 rounded-full transition-all duration-500" style="width: 0%">
+                                    <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-xs text-neon-purple font-mono">STATUS: QUANTUM PROCESSOR IDLE</div>
+                        </div>
+                    </div>
+                    
+                    <!-- NFT Certificate Preview -->
+                    <div class="text-center">
+                        <div class="glass p-6 rounded-xl inline-block">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-certificate text-2xl text-accent animate-neon-flicker"></i>
+                                <span class="text-white font-mono">NFT Certificate Ready</span>
+                            </div>
+                            <p class="text-sm text-text-light">Complete any AI module to mint your first neural certificate NFT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative py-12 overflow-hidden">
+        <div class="absolute inset-0 glass"></div>
+        <div class="absolute inset-0 grid-bg opacity-10"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 text-2xl font-bold neon-text mb-4 font-mono animate-neon-flicker">
+                        <i class="fas fa-chart-line animate-pulse-slow"></i>
+                        <span>FinanceEdu</span>
+                    </div>
+                    <p class="text-text-light leading-relaxed mb-4">Neural Learning Hub for financial literacy revolution with AI, blockchain, and future quantum computing technology.</p>
+                    
+                    <!-- Tech badges -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="glass px-2 py-1 rounded text-xs text-accent">NEURAL AI</span>
+                        <span class="glass px-2 py-1 rounded text-xs text-primary">QUANTUM</span>
+                        <span class="glass px-2 py-1 rounded text-xs text-secondary">BLOCKCHAIN</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 neon-text font-mono">AI Modules</h4>
+                    <ul class="list-none space-y-2">
+                        <li><a href="#budgeting" class="text-text-light hover:text-accent transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent rounded-full"></span>AI Budget Optimizer</a></li>
+                        <li><a href="#investment" class="text-text-light hover:text-primary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-primary rounded-full"></span>DeFi Trading Bot</a></li>
+                        <li><a href="#management" class="text-text-light hover:text-secondary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-secondary rounded-full"></span>Neural Wealth Manager</a></li>
+                        <li><a href="#planning" class="text-text-light hover:text-neon-purple transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-neon-purple rounded-full"></span>Quantum Planner</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 neon-text font-mono">Quantum Tools</h4>
+                    <ul class="list-none space-y-2">
+                        <li><a href="#" class="text-text-light hover:text-accent transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent rounded-full"></span>AI Budget Quantum</a></li>
+                        <li><a href="#" class="text-text-light hover:text-primary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-primary rounded-full"></span>DeFi Investment Sim</a></li>
+                        <li><a href="#" class="text-text-light hover:text-secondary transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-secondary rounded-full"></span>Neural Emergency AI</a></li>
+                        <li><a href="#" class="text-text-light hover:text-neon-pink transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-neon-pink rounded-full"></span>Progress Sync Monitor</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 neon-text font-mono">Neural Network</h4>
+                    <div class="flex gap-4 mb-6">
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-accent hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-discord group-hover:animate-bounce-slow"></i></a>
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-primary hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-twitter group-hover:animate-bounce-slow"></i></a>
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-secondary hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-github group-hover:animate-bounce-slow"></i></a>
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-neon-pink hover:neon-glow transition-all duration-300 hover:-translate-y-1 group">
+                            <i class="fab fa-telegram group-hover:animate-bounce-slow"></i></a>
+                    </div>
+                    
+                    <!-- Neural Status -->
+                    <div class="glass p-3 rounded-lg">
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span class="text-text-light">Neural Status: </span>
+                            <span class="text-accent font-mono">LEARNING MODE</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <span class="text-text-light">AI Modules: </span>
+                            <span class="text-primary font-mono">6 AVAILABLE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-white/10">
+                <p class="text-text-light font-mono">
+                    <span class="text-accent">©</span> 2024 FinanceEdu | 
+                    <span class="neon-text">Neural Learning Hub</span> | 
+                    <span class="text-primary">Quantum-Powered Education</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="education.js"></script>
+</body>
+</html>
