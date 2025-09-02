@@ -9,10 +9,13 @@ Complete setup guide for the futuristic AI-powered financial education platform 
 - **NPM** or **Yarn** package manager
 - Modern web browser with ES6+ support
 
-### One-Command Setup
+### Quick Setup
 ```bash
-# Clone, install, build, and run
-git clone <repository-url> && cd intechfest-web-design-2025 && npm install && npm run dev
+# Clone and install
+git clone <repository-url> && cd intechfest-web-design-2025 && npm install
+
+# Build CSS and start development
+npm run build && npm run dev
 ```
 
 ## 📋 Detailed Setup Process
@@ -359,77 +362,25 @@ module.exports = {
 }
 ```
 
-#### `dev.js` - Advanced Development Server
-```javascript
-const { spawn } = require('child_process');
-const path = require('path');
+#### Development Commands - Simplified Approach
+No separate dev.js file needed! The development workflow uses simple npm scripts:
 
-console.log('🚀 Starting FinanceEdu AI Platform Development Server...\n');
+```bash
+# Terminal 1: Start live server
+npm run dev
+# This starts live-server on http://localhost:3000 with auto-reload
 
-// Start Tailwind CSS in watch mode
-console.log('📦 Starting Tailwind CSS compiler...');
-const tailwindProcess = spawn('npx', [
-  'tailwindcss', 
-  '-i', './src/input.css', 
-  '-o', './dist/output.css', 
-  '--watch'
-], {
-  stdio: 'pipe'
-});
-
-// Start live server
-console.log('🌐 Starting live development server...');
-const serverProcess = spawn('npx', [
-  'live-server',
-  '--port=3000',
-  '--open=/index.html',
-  '--ignore=node_modules,dist',
-  '--wait=500'
-], {
-  stdio: 'pipe'
-});
-
-// Handle Tailwind output
-tailwindProcess.stdout.on('data', (data) => {
-  const output = data.toString();
-  if (output.includes('Done in')) {
-    console.log('✅ Tailwind CSS compiled successfully');
-  }
-});
-
-tailwindProcess.stderr.on('data', (data) => {
-  console.log('🔄 Tailwind:', data.toString());
-});
-
-// Handle server output
-serverProcess.stdout.on('data', (data) => {
-  const output = data.toString();
-  if (output.includes('Serving')) {
-    console.log('✅ Development server running at http://localhost:3000');
-    console.log('🎨 Tailwind CSS watching for changes...\n');
-    console.log('🤖 AI-Powered Financial Education Platform Ready!');
-    console.log('📝 Edit HTML/CSS files and see changes instantly');
-    console.log('🛑 Press Ctrl+C to stop the development server\n');
-  }
-});
-
-// Graceful shutdown
-process.on('SIGINT', () => {
-  console.log('\n🛑 Shutting down development server...');
-  tailwindProcess.kill();
-  serverProcess.kill();
-  process.exit(0);
-});
-
-// Handle process errors
-tailwindProcess.on('error', (err) => {
-  console.error('❌ Tailwind CSS Error:', err);
-});
-
-serverProcess.on('error', (err) => {
-  console.error('❌ Server Error:', err);
-});
+# Terminal 2: Watch CSS changes (optional during development)
+npm run dev:css
+# This watches src/input.css and rebuilds dist/output.css automatically
 ```
+
+**Benefits of this approach:**
+- ✅ No additional JavaScript files to maintain
+- ✅ Cross-platform compatibility (Windows, macOS, Linux)
+- ✅ Simple and reliable
+- ✅ Easy to understand and modify
+- ✅ No complex process management
 
 ### 5. **File Structure Update**
 ```
@@ -471,14 +422,18 @@ intechfest-web-design-2025/
 
 ### 1. **Development Mode**
 ```bash
+# Start development server
 npm run dev
+
+# In a separate terminal, start CSS watching (optional)
+npm run dev:css
 ```
 **Features:**
-- ✅ Tailwind CSS watch mode with hot reload
-- ✅ Live server with automatic browser refresh
-- ✅ Real-time CSS compilation
-- ✅ Error reporting and debugging
-- ✅ File watching for all project files
+- ✅ Live server with automatic browser refresh on `http://localhost:3000`
+- ✅ Hot reload when HTML/JS files change
+- ✅ CSS compilation when using `npm run dev:css`
+- ✅ Simple and reliable cross-platform setup
+- ✅ No complex build scripts required
 
 ### 2. **Production Build**
 ```bash

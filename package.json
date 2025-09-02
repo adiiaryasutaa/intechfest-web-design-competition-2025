@@ -4,7 +4,8 @@
   "description": "AI-Powered Financial Education Platform with Blockchain Technology and Quantum Computing Simulation",
   "main": "index.html",
   "scripts": {
-    "dev": "node dev.js",
+    "dev": "npx live-server --port=3000 --open=/index.html --ignore=node_modules,src --wait=500",
+    "dev:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "start": "npm run build && npx http-server -p 3000 -o",

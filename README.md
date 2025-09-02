@@ -122,8 +122,11 @@ npm run dev
 ### Available Scripts
 
 ```bash
-# Development server with hot reload and file watching
+# Development server with live reload
 npm run dev
+
+# CSS watch mode (run in separate terminal during development)
+npm run dev:css
 
 # Build production CSS (minified and optimized)
 npm run build
@@ -140,6 +143,24 @@ npm run preview
 # Clean build artifacts
 npm run clean
 ```
+
+### Development Workflow
+
+For the best development experience, run these commands in separate terminals:
+
+```bash
+# Terminal 1: Start the development server
+npm run dev
+
+# Terminal 2: Watch and compile CSS changes
+npm run dev:css
+```
+
+This approach gives you:
+- ✅ Live server with hot reload on `http://localhost:3000`
+- ✅ Automatic CSS compilation when you modify files
+- ✅ No complex build scripts or additional dependencies
+- ✅ Cross-platform compatibility (Windows, macOS, Linux)
 
 ### Quick Start (No Node.js)
 For immediate testing, open `index.html` directly in a modern web browser.
