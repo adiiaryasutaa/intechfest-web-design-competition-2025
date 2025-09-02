@@ -2,6 +2,9 @@
 
 A futuristic financial education platform powered by artificial intelligence, blockchain technology, and quantum computing simulation for the digital economy era.
 
+### Hosting
+https://intechfest-web-design-competition-2.vercel.app
+
 ## 🚀 Project Overview
 
 FinanceEdu is a next-generation financial literacy platform that combines cutting-edge technology with comprehensive financial education. The platform features AI-powered learning paths, blockchain-verified certificates, and quantum financial calculators to deliver personalized learning experiences.
